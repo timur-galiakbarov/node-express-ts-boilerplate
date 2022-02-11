@@ -1,0 +1,46 @@
+{
+    "env": {
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": "airbnb-base",
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018
+    },
+    "rules": {
+        "no-underscore-dangle": "off",
+        "no-plusplus": 0,
+        "no-await-in-loop": 0,
+        "class-methods-use-this": 0,
+        "new-cap": "off",
+        "max-len": 0,
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "no-tabs": "off",
+        "linebreak-style": ["error", "unix"],
+        "object-shorthand": "off",
+        "spaced-comment": "off",
+        "arrow-parens": "off",
+        "comma-spacing": "off",
+        //обязательный пробел перед комментарием
+        "no-trailing-spaces": "off",
+        //пустые строки
+        "object-curly-newline": "off",
+        //обязательная новая строка для объектов после {
+        "no-mixed-operators": "off",
+        //Unexpected mix of '&&' and '||'.(no-mixed-operators)
+        "quotes": [0],
+        "no-param-reassign": 0
+    },
+    "plugins": ["promise"]
+}

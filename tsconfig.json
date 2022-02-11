@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": true,// Показывать ошибку, если где-то задан тип "any".
+        "module": "commonjs",// Определяет тип импорта кода в итоговом файле, прописанном в "outFile". Необходимо задавать при использовании опции "outFile".
+        "allowJs": false,
+        "target": "ES6",// Тип кода создаваемого итогового файла.
+        "moduleResolution": "node",// Определить способ поиска модулей в папках: как в Node.js или классический, как в TypeScript 1.5 и ниже.
+        "allowSyntheticDefaultImports": true,// Разрешить импортировать модули не имеющие внутри себя "import default"
+        "esModuleInterop": true,// Создать хелперы __importStar и __importDefault для обеспечения совместимости с экосистемой Babel и включить allowSyntheticDefaultImports для совместимости с системой типов.
+        "lib": [
+            "es2016",
+            "dom",
+            "esnext.asynciterable",
+            "esnext.array",
+            "es2017.object"
+        ],
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "**/*.spec.ts"]
+}

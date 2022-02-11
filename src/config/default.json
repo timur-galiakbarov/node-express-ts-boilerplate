@@ -1,0 +1,11 @@
+{
+    "appPort": 3003,
+    "dbconn": "mongodb://localhost:27017/badgeup",
+    "authLogin": "admindb",
+    "authPwd": "XSW@zaq1",
+    "apiAppUrl": "http://localhost:3002",
+    "logPath": "./logs",
+    "logFileName": "error.log",
+    "graylogHost": "",
+    "graylogPort": ""
+}
